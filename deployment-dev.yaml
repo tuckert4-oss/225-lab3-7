@@ -11,6 +11,7 @@ spec:
     metadata:
       labels:
         app: nginx
+        role: dev
     spec:
       containers:
       - name: nginx
@@ -42,6 +43,7 @@ metadata:
 spec:
   selector:
     app: nginx
+    role: dev
   ports:
   - protocol: TCP
     port: 80
